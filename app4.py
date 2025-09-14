@@ -1,9 +1,6 @@
 import streamlit as st
 import requests
-import pandasql as ps
-from pandasql import sqldf
 import pandas as pd
-import plotly.express as px
 import os
 from functools import lru_cache
 import sqlite3
@@ -463,3 +460,4 @@ PAGES = {
 
 choice = st.sidebar.radio("Go to:", list(PAGES.keys()))
 PAGES[choice]()
+
